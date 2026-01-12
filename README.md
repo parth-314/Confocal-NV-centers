@@ -4,6 +4,6 @@ The project we are currently working on is setting up a scanning confocal micros
 
 ## LabVIEW inputs
 Counter Path: 
-Dev1/ctr0 .
+'Dev1/ctr0' .
 Galvo mirror Path:
-Dev1/ao0:1 .
+'Dev1/ao0:1' .
