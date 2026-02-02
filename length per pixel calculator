@@ -1,0 +1,14 @@
+import numpy as np
+v = 0.5 #float(input("Volatge in V"))
+pixel_per_line = 200 
+s = 0.5 #scale factor (volts / deg)
+f = 15e-2 #imaging focal length (in m)
+n_obj = 50 #magnification of objective
+delta_v = 2 * v
+theta_pix_deg = delta_v / s
+theta_pix_rad = theta_pix_deg * np.pi /180
+delta_x = (theta_pix_rad * f) / n_obj
+delta_x_m = delta_x * 1e6 #length in micrometer
+print("length", delta_x_m,"micrometers")
+l_perpixel = delta_x_m / pixel_per_line
+print("length per pixel", l_perpixel, "micrometers")
